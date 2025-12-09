@@ -1,5 +1,5 @@
 # spark-research
-Machine vision model trained on welding videos to recognizes sparks with the goal of automatically turning off failing power transformers. Optimized for the VAR SOM MX93 board.i
+Machine vision model trained on welding videos to recognizes sparks with the goal of automatically turning off failing power transformers. Optimized for the VAR SOM MX93 board.
  
 <video width="320" height="240" controls>
   <source src="spark-detector-demo.mp4" type="video/mp4">
