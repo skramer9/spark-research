@@ -11,11 +11,18 @@
     The original Pytorch has been converted to tflite, quantized, and optimized with vela for the VAR SOM MX93 board. The model's architecture is based on MobileNet. 
   </p>
   <video width="960" height="720" controls>
-    <source src="spark-detector-demo.mp4" type="video/mp4">
+    <source src="spark-detector-video-demo.mp4" type="video/mp4">
   Your browser does not support the video tag.
   </video> 
   <p>
-    The above video shows the model being run on a test video. The -128 output indicates high confidence in the presence of sparks. When the man comes onto the screen, the positive numbers indicate confidence in the absence of sparks.
+    The above video shows the model being run on a test video. The -128 output indicates high confidence in the presence of sparks. When the welding stops and it cuts to a 
+    man talking, the positive numbers indicate confidence in the absence of sparks.
+  </p>
+  <br>
+  <p>
+    The following video shows the model being run on the camera attached to the board, running in real time. Due to lack of access to welding equipment, I put a video in front of the camera. It begins predicting positive (no sparks) 
+    while pointed at the back of the computer. Once the welding video is played in front of the camera, it starts predicting large negative numbers. Once the welding stops in the video and it cuts to a person talking, it beings to predict 
+    positive numbers again.
   </p>
 </body>
 </html> 
